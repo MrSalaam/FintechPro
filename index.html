@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FintechPro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="navbar">
+  <div class="container nav-container">
+    <h1 class="logo">Fintech<span>Pro.</span></h1>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-right desktop-nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+
+  <section class="hero">
+    <div class="container hero-wrapper">
+        <div class="hero-text">
+        <h1>Modern Banking for the Future</h1>
+        <p>Secure. Scalable. Smarter. The fintech platform built for startups and enterprises alike.</p>
+        <div class="hero-buttons">
+            <button class="primary-btn">Get Started</button>
+            <button class="secondary-btn">Explore Features</button>
+        </div>
+        </div>
+        <div class="hero-image">
+        <img src="./assets/dashh.webp" alt="Fintech Illustration" />
+        </div>
+    </div>
+    <div class="hero-bg-blur"></div>
+</section>
+
+
+  <section class="logo-strip">
+    <div class="container logo-container">
+        <p>Trusted by teams at</p>
+        <div class="logo-row">
+            <img src="./assets/logos/google-color-svgrepo-com.svg" alt="Google" />
+            <img src="./assets/logos/amazon-color-svgrepo-com.svg" alt="Amazon" />
+            <img src="./assets/logos/stripe-svgrepo-com.svg" alt="Stripe" />
+            <img src="./assets/logos/notion-svgrepo-com.svg" alt="Notion" />
+            <img src="./assets/logos/vercel-icon-svgrepo-com.svg" alt="Vercel" />
+        </div>
+    </div>
+  </section>
+
+
+  <section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title">Powerful Features</h2>
+    <p class="section-subtitle">Built for scale, security, and speed. Everything your team needs to launch financial products.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="./assets/icons/shield.svg" alt="Security" />
+        <h3>Bank-Grade Security</h3>
+        <p>End-to-end encryption, biometric access, and compliance with PCI-DSS standards.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./assets/icons/zap.svg" alt="Speed" />
+        <h3>Instant Transfers</h3>
+        <p>Send and receive money globally in seconds with our high-speed transaction engine.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./assets/icons/chart-bar-increasing.svg" alt="Analytics" />
+        <h3>Smart Analytics</h3>
+        <p>Real-time dashboards and reporting help you make data-driven decisions with ease.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-item">
+      <h3>12M+</h3>
+      <p>Transactions Processed</p>
+    </div>
+    <div class="stat-item">
+      <h3>99.99%</h3>
+      <p>Uptime This Year</p>
+    </div>
+    <div class="stat-item">
+      <h3>28+</h3>
+      <p>Countries Supported</p>
+    </div>
+    <div class="stat-item">
+      <h3>$1.2B</h3>
+      <p>Total Volume</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title">Simple, transparent pricing</h2>
+    <p class="section-subtitle">No hidden fees. Choose a plan that scales with your business.</p>
+
+    <div class="pricing-toggle">
+        <span class="toggle-label">Monthly</span>
+        <label class="switch">
+            <input type="checkbox" id="billingToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Yearly</span>
+    </div>
+
+
+    <div class="pricing-grid">
+      <!-- Free Plan -->
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <p class="price" data-monthly="25" data-yearly="300">$0<span>/mo</span></p>
+        <ul>
+          <li>✓ Basic transactions</li>
+          <li>✓ Email support</li>
+          <li>✓ Uptime monitoring</li>
+        </ul>
+        <button class="pricing-btn">Get Started</button>
+      </div>
+
+      <!-- Pro Plan (Highlighted) -->
+      <div class="pricing-card popular">
+        <div class="badge">Most Popular</div>
+        <h3>Pro</h3>
+        <p class="price" data-monthly="300" data-yearly="3600">$29<span>/mo</span></p>
+        <ul>
+          <li>✓ Everything in Starter</li>
+          <li>✓ Instant payouts</li>
+          <li>✓ Priority support</li>
+        </ul>
+        <button class="pricing-btn">Start Free Trial</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="pricing-card">
+        <h3>Enterprise</h3>
+        <p class="price" data-monthly="100" data-yearly="1200">Custom</p>
+        <ul>
+          <li>✓ Dedicated infrastructure</li>
+          <li>✓ Custom integrations</li>
+          <li>✓ 24/7 support</li>
+        </ul>
+        <button class="pricing-btn">Contact Sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial" id="testimonials">
+  <div class="container">
+    <div class="testimonial-head">
+      <h2 class="section-title">Trusted by the world’s fastest teams</h2>
+      <p class="section-subtitle">See why top companies choose FintechPro to scale their financial products.</p>
+    </div>
+
+    <div class="testimonials-scroll-wrapper">
+      <div class="testimonials-scroll" id="testimonialTrack">
+        <!-- 3 Original Cards -->
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>FintechPro enabled us to integrate financial operations in less than a week. The clarity of their API and the speed of support are unmatched.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (1).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Kayla Nguyen</strong>
+              <span>Lead Engineer @ SyncPay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>Switching to FintechPro was the best decision. We've increased efficiency by 40% and reduced fraud risk significantly.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (2).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Leon Harper</strong>
+              <span>COO @ AltBank</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>Our product launched in 10 markets thanks to FintechPro's infrastructure. The documentation and support are just elite.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (3).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Maya Thomas</strong>
+              <span>Head of Product @ FlowPay</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Duplicates for Infinite Scroll -->
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>FintechPro enabled us to integrate financial operations in less than a week. The clarity of their API and the speed of support are unmatched.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (1).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Kayla Nguyen</strong>
+              <span>Lead Engineer @ SyncPay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>Switching to FintechPro was the best decision. We've increased efficiency by 40% and reduced fraud risk significantly.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (2).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Leon Harper</strong>
+              <span>COO @ AltBank</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-v2">
+          <div class="testimonial-quote">
+            <span class="quote-mark">“</span>
+            <p>Our product launched in 10 markets thanks to FintechPro's infrastructure. The documentation and support are just elite.</p>
+          </div>
+          <div class="testimonial-profile">
+            <img src="./assets/icons/avatar (3).svg" alt="Avatar" />
+            <div class="testimonial-meta">
+              <strong>Maya Thomas</strong>
+              <span>Head of Product @ FlowPay</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about" id="about">
+  <div class="container about-split">
+    <!-- Left Text -->
+    <div class="about-content">
+      <h2 class="section-title">Not just infrastructure. It’s your launchpad.</h2>
+      <p class="section-subtitle">
+        FintechPro gives you everything you need to build, launch, and grow secure, compliant financial products — from developer-first APIs to battle-tested scalability.
+      </p>
+
+      <div class="about-points">
+        <div><span>✔</span> Fully modular fintech APIs</div>
+        <div><span>✔</span> Real-time global transactions</div>
+        <div><span>✔</span> SOC2, ISO 27001, GDPR-compliant</div>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="about-media">
+      <img src="./assets/Screenshot (73).png" alt="Fintech UI Preview" />
+    </div>
+  </div>
+</section>
+
+
+
+<section class="cta" id="get-started">
+  <div class="container">
+    <div class="cta-card">
+      <h2 class="cta-title">Ready to launch your next big thing?</h2>
+      <p class="cta-subtitle">
+        Start building with FintechPro’s powerful APIs. It's fast, secure, and developer-first.
+      </p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary">Get Started</a>
+        <a href="#pricing" class="btn btn-secondary">See Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="container contact-wrapper">
+    <div class="contact-info">
+      <h2 class="section-title">Talk to our team</h2>
+      <p class="section-subtitle">
+        Whether you’re launching a fintech product or scaling a global platform, we’d love to hear from you.
+      </p>
+      <a href="mailto:hello@fintechpro.com" class="contact-email">📨 hello@fintechpro.com</a>
+      <p class="contact-alt">or use the form </p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea rows="5" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Find answers to the most common questions about FintechPro and how it helps your business scale fast.</p>
+    </div>
+
+    <div class="faq-grid">
+      <!-- Column 1 -->
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question">
+            <div class="icon-box">💡</div>
+            <span>What is FintechPro and who is it for?</span>
+            <i class="toggle-icon">+</i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              FintechPro is a modular API platform for building secure, compliant financial products used by startups, banks, and enterprises worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <div class="icon-box">🚀</div>
+            <span>Is there a free version available?</span>
+            <i class="toggle-icon">+</i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. Developers can start for free with generous usage limits. As your product scales, we offer flexible usage-based pricing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question">
+            <div class="icon-box">🌍</div>
+            <span>Can I use FintechPro globally?</span>
+            <i class="toggle-icon">+</i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. We support customers in 50+ countries with global KYC, payments, and data privacy compliance.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <div class="icon-box">🛡️</div>
+            <span>Is FintechPro secure and compliant?</span>
+            <i class="toggle-icon">+</i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes we are SOC 2 Type II certified, GDPR compliant, and follow industry-grade security best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <!-- Column 1: Brand -->
+    <div class="footer-brand">
+      <h3 class="logo">FintechPro</h3>
+      <p class="footer-desc">
+        Scalable APIs and infrastructure for the next generation of financial builders.
+      </p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Twitter"><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin.svg" alt="linkedin"></a>
+        <a href="#" aria-label="GitHub"><img src="./assets/icons/github.svg" alt="github"></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Product -->
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Payments API</a></li>
+        <li><a href="#">KYC & Identity</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Use Cases -->
+    <div class="footer-col">
+      <h4>Use Cases</h4>
+      <ul>
+        <li><a href="#">Neobanks</a></li>
+        <li><a href="#">Lending</a></li>
+        <li><a href="#">Wallet Apps</a></li>
+        <li><a href="#">Remittance</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Company -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 5: Legal -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Compliance</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Newsletter & Bottom -->
+  <div class="footer-bottom container">
+    <form class="footer-newsletter">
+      <input type="email" placeholder="Subscribe for updates" required />
+      <button type="submit">→</button>
+    </form>
+    <p class="copyright">
+      &copy; 2025 FintechPro, Inc. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+ 
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
